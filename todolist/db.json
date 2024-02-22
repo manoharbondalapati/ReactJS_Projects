@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "title": "The  Testing",
+      "isPublished": false,
+      "id": 1
+    },
+    {
+      "title": "The Engineer",
+      "isPublished": false,
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
