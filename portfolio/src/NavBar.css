@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
   }
   body{
     height: 100%;
+    background-color: rgb(255, 255, 255);
+  
+   
   }
 
   .active
   {
-    color:gold;
+    color:rgb(2, 8, 45);
   }
 nav li {
     list-style-type: none;
@@ -35,7 +36,9 @@ nav {
     justify-items: center;
     position: sticky;
     top: 0;
-    background-color: rgb(57, 75, 107);
+    background-color: #6970ff;
+   
+
 }
 nav ul{
     display: flex;
@@ -50,19 +53,21 @@ nav ul li{
 }
 nav ul li a{
     display: block;
-    color: rgb(244, 177, 9);
+    color: rgb(255, 255, 255);
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
+    font-weight: 500;
 }
 #name{
-    color: rgb(244, 177, 9);
-    font-family: "Cedarville Cursive", cursive;
+    color: rgb(2,8,45);
+    /* font-family: "Cedarville Cursive", cursive; */
     font-size: 25px; 
+    font-weight: 800;
 }
 nav ul li a:not(.active):hover
 {
-    background-color:rgba(0, 0,0, 0.4);
+    background-color:rgba(14, 10, 86, 0.4);
 }
 
 .nav-icon{
@@ -111,7 +116,8 @@ nav ul li a:not(.active):hover
         position: absolute;
         top: 10%;
         right: 0.5rem;
-        color: white;
+        color: rgb(2, 8, 45);
+        font-weight: bolder;
     }
     .nav-menu
     {
@@ -125,42 +131,166 @@ nav ul li a:not(.active):hover
     
 }
 
+/* home */
+
+.container {
+   
+    display: flex;
+    justify-content: space-around;
+}
 
 
+#myimg
+{
+    height: 300px;
+    width: 300px;
+    
+}
+.container
+{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 10%;
+}
+ .about
+ {
+    width: 600px;
+ }
 
+ @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  #myimg {
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
 
+  @media (max-width:960px) {
+    .about
+    {
+        width: auto;
+    }
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+  }
+ .about q #text
+ {
+    color:rgb(2,8,45);
+    font-weight: bold;
+ }
+ #myname
+ {
+    color: #6970ff;
+ }
+ .my-icons {
+    display: flex;
+  }
+  
+  .my-icons button {
+  
+    border: solid 1px rgb(10, 22, 97);
+    margin-right: 10px;
+    border-radius: 50%; /* Makes the button circular */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(68, 78, 145);
+    outline:none;
+    /* border: none; */
+  }
+  
+  .my-icons button:last-child {
+    margin-right: 0;
+  }
+  
+  .my-icons button:hover {
+    background-color:rgb(2,8,45);
+    color: white;
+  }
+  #cvbutton
+  {
+    background-color: rgb(68, 78, 145);
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 120px;
+    padding: 2px 0px 2px 0px;
+    margin-top: 10px;
+  }
+ #cvbutton:hover
+ {
+    background-color: white;
+    color:rgb(2,8,45);
+    border: #6970ff;
+    border: solid 1px;
+ }
+ /* about */
 
+ #myimg2
+ {
+    height: 200px;
+    width: 200px;
+    /* background-image: url("https://res.cloudinary.com/dpfnyv0ut/image/upload/v1709043904/t8ersbeh7cvmbcrknjxb.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+ }
+ #myimg3
+ {
+    position: absolute;
+    z-index: -1;
+    left: 240px;
+    bottom: 240px;
+    height: 200px;
+    width: 250px;
+ }
 
  
-  
-  /* .nav-links {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    height: 100%;
-    border-bottom: 3px solid transparent;
-  }
- 
-  
-  .nav-item {
-    line-height: 40px;
-    margin-right: 1rem;
+ @keyframes floatUpDown2 {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
   }
   
-  .nav-item:after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 0;
-    background: transparent;
-    transition: width 0.7s ease, background-color 0.5s ease;
+  #myimg2{
+    animation: floatUpDown2 3s ease-in-out infinite;
   }
-  
-  .nav-item:hover:after {
-    width: 100%;
-    background: #ffdd40;
-  }
-   */
-  
- 
+
+@media (max-width:960px) {
+    #myimg3
+    {
+        position: absolute;
+        z-index: -1;
+        left: 10px;
+        top: 100px;
+        bottom: 0px;
+        height: 200px;
+        width: 250px;
+    }
+
+    #contentdiv
+    {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    
+}
  
